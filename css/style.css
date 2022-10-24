@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(120, 158, 194);
+    
+}
+main {
+    width: 100vw;
+    height: 1000px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-image: linear-gradient(149deg, rgb(89, 126, 160) 329px, rgba(0,0,0,0) 385px);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;   
+    
+}
+header {
+    width: 100vw;
+    height: 200px;
+    background-image: url(/img//Background1.jpg);
+    background-size: cover;
+    background-position: top;
+    margin: 0px;
+    padding: 0;
+}
+nav a:hover {
+background-color: rgb(140, 178, 214);
+}
+
+.DividerTriangleLeft {
+padding: 0;
+margin: 0;
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 100px 100vw 0 0;
+border-color: #2C2C2C transparent transparent transparent;
+}
+
+nav img {
+    padding: 0px 0px;
+}
+nav a {
+    display: block;
+    color: white;
+    text-align:center;
+    padding: 30px 20px;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+h1 {
+    display: flex;
+    color: white;
+    align-self:center;
+    font-size: 3em;
+    margin-top: 55px;
+}
+
+@media (max-width: 600px) {
+    header {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        background-color: rgb(89, 126, 160);
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    nav a {
+        border-left: none;
+        border-top: 1px solid white;
+        
+    }
+}
